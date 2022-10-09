@@ -115,14 +115,6 @@ nav .menu .menu-button:hover {
 
 /*section end*/
 
-
-/*icon start*/
-.wrapper i {
-    color: #f20101;
-}
-/*icon end*/
-
-
 /* ! responsive start*/
 @media (max-width: 576px) {
   .container {
@@ -141,7 +133,6 @@ nav .menu .menu-button:hover {
 
   .content {
     padding-top: 50px;
-
   }
   .content h1 {
     font-size: 48px;
@@ -160,7 +151,6 @@ nav .menu .menu-button:hover {
     padding: 10px;
     width: 50%;
   }
-
 }
 
 /*responsive end*/
