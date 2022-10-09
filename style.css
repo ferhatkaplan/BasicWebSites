@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Amatic SC", cursive;
+  background-image: url("/images/cosmos.jpg");
+  background-size: cover;
+}
+
+a {
+  color: #ecb365;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  font-size: 1.3rem;
+}
+
+/*header start*/
+
+header {
+  height: 100px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.19);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header nav .logo a {
+  font-size: 2rem;
+  color: #ecb365;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  column-gap: 30px;
+}
+
+nav ul li a {
+  color: #ecb365;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+nav ul li a:hover {
+  color: #e65c4f;
+}
+
+nav .menu {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+nav .menu .menu-button {
+  color: #ecb365;
+  text-decoration: none;
+  background-color: rgba(255, 2555, 255, 0.15);
+  padding: 10px 20px;
+  border-radius: 56px;
+  transition: all 0.25s ease;
+}
+
+nav .menu .menu-button:hover {
+  background-color: #295369;
+}
+/*header end*/
+/*section start*/
+
+.content {
+  color: #ecb365;
+  height: calc(100vh - 100px);
+  padding-top: 150px;
+}
+.content h1 {
+  font-size: 60px;
+  text-align: center;
+}
+.content p {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.content .links {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  column-gap: 24px;
+}
+
+.content .links a {
+  background-color: rgba(255, 2555, 255, 0.15);
+  padding: 12px;
+  border-radius: 56px;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+  transition: all 0.25s ease-in;
+}
+
+.content .links a:hover {
+  background-color: #295369;
+}
+
+/*section end*/
+
+
+/*icon start*/
+.wrapper i {
+    color: #f20101;
+}
+/*icon end*/
+
+
+/* ! responsive start*/
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .menu ul {
+    column-gap: 10px;
+  }
+
+  .menu .menu-button {
+    display: none;
+  }
+
+  .content {
+    padding-top: 50px;
+
+  }
+  .content h1 {
+    font-size: 48px;
+  }
+  .content p {
+    font-size: 24px;
+  }
+
+  .content .links {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+
+  .content .links a {
+    padding: 10px;
+    width: 50%;
+  }
+
+}
+
+/*responsive end*/
